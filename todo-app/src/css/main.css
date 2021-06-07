@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background: #26439B;
+    color: white;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #2F51B9;
+    border-radius: 10px;
+    border: solid white 1px;
+    padding: 2em 0;
+    margin-top: 2em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #c4eafc;
+}
+
+.todo-div {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    cursor: pointer;
+    padding: .5em 1em;
+    border: none;
+    color: #1a3483;
+    background: #ffba5b;
+    border-radius: 5px;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.imput-field {
+    width: 80%;
+}
+
+.imput-field input {
+    box-sizing: border-box;
+    width: 100%;
+    background: #4f74e6;
+    border: none;
+    border-radius: 5px;
+    padding: .5em 1em;
+    color: #92DBFD;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.checkbox {
+    visibility: hidden;
+    box-sizing: border-box;
+    background: #56BA88;
+    padding: .2em .5em;
+    padding-top: .4em;
+    border-radius: 5px;
+}
+
+.xbutton {
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #e65e67;
+    padding: .2em .5em;
+    padding-top: .4em;
+    border-radius: 5px;
+}
+
+.add-todo-button {
+    display: flex;
+    justify-content: center;
+}
+
+.add-todo-button button {
+    cursor: pointer;
+    background: none;
+    border: solid #D696B6 1px;
+    border-radius: 5px;
+    padding: .5em 2em;
+    margin-top: 1em;
+    color: #D696B6;
+    font-weight: bold;
+}
