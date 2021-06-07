@@ -4,15 +4,24 @@ function App() {
   return (
     <div className="container">
       <div className="title">MY REACT REDUX TODO APP</div>
+
       <div className="todo-div">
         <div className="checkbox">
           <i className="fas fa-check"></i>
         </div>
-        <div className="imput-field">
-          <input type="text" />
+        <div className="input-field">
+          The first todo
         </div>
         <div className="xbutton">
-          {/* <i className="fas fa-times"></i> */}
+          <i className="fas fa-times"></i>
+        </div>
+      </div>
+
+      <div className="new-todo-div">
+        <div className="new-input-field">
+          <input type="text" />
+        </div>
+        <div className="okbutton">
           OK
         </div>
       </div>
