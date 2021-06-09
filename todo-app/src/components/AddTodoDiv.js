@@ -1,4 +1,8 @@
 import React from 'react'
+import { store } from '../store/reduxStore'
+import addTodo from "../actions/addTodo"
+
+import { addTodoFn } from "../functions/addTodoFn"
 
 function AddTodoDiv () {
     return (
@@ -7,7 +11,7 @@ function AddTodoDiv () {
                 <div className="new-input-field">
                 <input type="text" />
                 </div>
-                <div className="okbutton">
+                <div className="okbutton" onClick={addTodoFn}>
                 OK
                 </div>
             </div>
