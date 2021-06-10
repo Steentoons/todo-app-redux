@@ -1,6 +1,4 @@
 import React from 'react'
-import { store } from '../store/reduxStore'
-import addTodo from "../actions/addTodo"
 
 import { addTodoFn } from "../functions/addTodoFn"
 
