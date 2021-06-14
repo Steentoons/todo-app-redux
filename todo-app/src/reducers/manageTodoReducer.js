@@ -1,3 +1,5 @@
+import { genId } from "../functions/addTodoFn"
+
 const manageTodoReducer = (state, action) => {
     switch(action.type) {
         case "ADD_TODO":
@@ -8,7 +10,7 @@ const manageTodoReducer = (state, action) => {
                         ...state.task, 
                         {
                             name: "This is the name", 
-                            id: state.task.length, 
+                            id: genId(state.task), 
                             complete: false
                     }]
                 }
@@ -19,7 +21,15 @@ const manageTodoReducer = (state, action) => {
                     ...state,
                     task: []
                 }
-            )  
+            )
+            
+        case "DELETE_TODO":
+            return (
+                {
+                    ...state,
+                    task: state.task.filter((indexNum) => indexNum.id !== action.payload)
+                }
+            )   
 
         default:
             return state    
@@ -27,3 +37,4 @@ const manageTodoReducer = (state, action) => {
 }
 
 export default manageTodoReducer
+
