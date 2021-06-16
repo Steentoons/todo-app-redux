@@ -9,5 +9,7 @@ export const completeTaskFn = (checkboxId, state) => {
 }
 
 export const addTodoFn = () => {
-    store.dispatch(addTodo())
+    const inputMessage = document.getElementById("add_todo_input").value
+    alert("The input message : " + inputMessage)
+    store.dispatch(addTodo(inputMessage))
 }

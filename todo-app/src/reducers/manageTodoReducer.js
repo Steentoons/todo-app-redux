@@ -8,7 +8,7 @@ const manageTodoReducer = (state, action) => {
                 task: [
                     ...state.task,
                     {
-                        name: "This is the name",
+                        name: action.payload,
                         id: genId(state.task),
                         complete: false
                     }

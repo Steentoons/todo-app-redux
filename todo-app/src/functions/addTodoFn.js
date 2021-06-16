@@ -26,7 +26,7 @@ export const componentRenderer = (state) => {
                         <i className="fas fa-check"></i>
                     </div>
                     <div className="input-field">
-                        The first todo
+                        {current.name}
                     </div>
                     <div id={deleteId} className="xbutton" onClick={() => deleteATodo(deleteId)}>
                         <i className="fas fa-times"></i>

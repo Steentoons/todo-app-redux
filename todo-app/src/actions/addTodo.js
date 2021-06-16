@@ -1,7 +1,7 @@
-const addTodo = () => {
+const addTodo = (inputMessage) => {
     return ({
         type: "ADD_TODO",
-        payload: "This is the message"
+        payload: inputMessage
     })
 }
 
