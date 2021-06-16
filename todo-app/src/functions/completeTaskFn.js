@@ -2,7 +2,9 @@ import { store } from "../store/reduxStore"
 import addTodo from "../actions/addTodo"
 import completeTask from "../actions/completeTask"
 
-export const completeTaskFn = (checkboxId) => {
+export let checkClass = "not-checked-task"
+
+export const completeTaskFn = (checkboxId, state) => {
     store.dispatch(completeTask(checkboxId))
 }
 

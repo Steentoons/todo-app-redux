@@ -14,29 +14,21 @@ export const componentRenderer = (state) => {
 
     const TodoComponents = state.map((current) =>
         {
+            const deleteId = current.id
             const checkboxId = current.id + 1000
-
-            const checkCorrectClass = () => {
-                if(state[current.id].complete) 
-                    return "checked-task"
-                else
-                    return "not-checked-task"
-            }
-            
-            const checkboxState = checkCorrectClass()
             return (
                 <div className="todo-div">
                     <div 
                         id={checkboxId} 
-                        className={checkboxState} 
-                        onClick={() => completeTaskFn(checkboxId)}
+                        className={current.complete ? "checked-task" : "not-checked-task"} 
+                        onClick={() => completeTaskFn(checkboxId, state)}
                     >
                         <i className="fas fa-check"></i>
                     </div>
                     <div className="input-field">
                         The first todo
                     </div>
-                    <div id={current.id} className="xbutton" onClick={() => deleteATodo(current.id)}>
+                    <div id={deleteId} className="xbutton" onClick={() => deleteATodo(deleteId)}>
                         <i className="fas fa-times"></i>
                     </div>
                 </div>

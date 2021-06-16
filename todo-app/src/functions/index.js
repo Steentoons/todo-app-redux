@@ -1,5 +1,5 @@
 import { clearListFn } from "./clearListFn"
-import { addTodoFn, completeTaskFn } from "./completeTaskFn"
+import { addTodoFn, completeTaskFn, checkCorrectClass } from "./completeTaskFn"
 
 export {
     addTodoFn,
