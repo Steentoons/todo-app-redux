@@ -1,6 +1,8 @@
-const completeTask = () => {
+const completeTask = (deleteIndex) => {
+
     return ({
-        type: "COMPLETE_TASK"
+        type: "COMPLETE_TASK",
+        payload: deleteIndex
     })
 }
 

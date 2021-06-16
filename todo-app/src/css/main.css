@@ -91,18 +91,33 @@ body {
     box-sizing: border-box;
     cursor: pointer;
     background: #56BA88;
+    filter: opacity(.6);
     padding: .2em .5em;
     padding-top: .4em;
     border-radius: 5px;
+}
+
+.checkbox:hover {
+    background: #4db17f;
+    filter: opacity(.8);
+}
+
+.checkbox i {
+    visibility: hidden;
 }
 
 .xbutton {
     cursor: pointer;
     box-sizing: border-box;
     background: #e65e67;
+    filter: opacity(.9);
     padding: .2em .5em;
     padding-top: .4em;
     border-radius: 5px;
+}
+
+.xbutton:hover {
+    filter: opacity(1);
 }
 
 .okbutton {

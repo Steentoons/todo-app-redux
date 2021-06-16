@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { addTodoFn } from "../functions/addTodoFn"
+import { addTodoFn } from "../functions"
 
 function AddTodoDiv () {
     return (
