@@ -87,7 +87,23 @@ body {
     text-transform: uppercase;
 }
 
-.checkbox {
+.not-checked-task {
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #56BA88;
+    padding: .2em .5em;
+    padding-top: .4em;
+    border-radius: 5px;
+}
+
+.not-checked-task:hover {
+    background: #4db17f;
+    filter: opacity(.8);
+}
+
+.not-checked-task i {}
+
+.checked-task {
     box-sizing: border-box;
     cursor: pointer;
     background: #56BA88;
@@ -97,12 +113,12 @@ body {
     border-radius: 5px;
 }
 
-.checkbox:hover {
+.checked-task:hover {
     background: #4db17f;
     filter: opacity(.8);
 }
 
-.checkbox i {
+.checked-task i {
     visibility: hidden;
 }
 

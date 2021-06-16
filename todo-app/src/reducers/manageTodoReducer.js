@@ -32,7 +32,7 @@ const manageTodoReducer = (state, action) => {
 
                 const arrayIndex = state.task.findIndex(item => item.id === newIndex)
                 const newArray = [...state.task]
-                newArray[arrayIndex].complete = true
+                newArray[arrayIndex].complete = !newArray[arrayIndex].complete
 
                 return ({
                     ...state,

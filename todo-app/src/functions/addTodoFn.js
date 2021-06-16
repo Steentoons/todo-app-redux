@@ -15,11 +15,20 @@ export const componentRenderer = (state) => {
     const TodoComponents = state.map((current) =>
         {
             const checkboxId = current.id + 1000
+
+            const checkCorrectClass = () => {
+                if(state[current.id].complete) 
+                    return "checked-task"
+                else
+                    return "not-checked-task"
+            }
+            
+            const checkboxState = checkCorrectClass()
             return (
                 <div className="todo-div">
                     <div 
                         id={checkboxId} 
-                        className="checkbox" 
+                        className={checkboxState} 
                         onClick={() => completeTaskFn(checkboxId)}
                     >
                         <i className="fas fa-check"></i>
