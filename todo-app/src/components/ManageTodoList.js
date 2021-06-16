@@ -6,7 +6,6 @@ function ManageTodoList() {
         <div>
            <div className="buttons">
                 <button onClick={clearListFn}>CLEAR LIST</button>
-                <button>COMPLETE LIST</button>
             </div>                                                             
         </div>
     )

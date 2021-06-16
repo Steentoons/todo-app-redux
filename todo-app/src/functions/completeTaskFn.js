@@ -10,6 +10,6 @@ export const completeTaskFn = (checkboxId, state) => {
 
 export const addTodoFn = () => {
     const inputMessage = document.getElementById("add_todo_input").value
-    alert("The input message : " + inputMessage)
     store.dispatch(addTodo(inputMessage))
+    document.getElementById("new_todo_div").className = "invisible-new-todo-div"
 }

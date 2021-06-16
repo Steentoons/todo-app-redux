@@ -10,6 +10,11 @@ export const genId = (state) => {
     )
 }
 
+export const startAddingTodos = () => {
+    document.getElementById("new_todo_div").className = "visible-new-todo-div"
+    document.getElementById("add_todo_input").value = ""
+}
+
 export const componentRenderer = (state) => {
 
     const TodoComponents = state.map((current) =>

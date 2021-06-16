@@ -33,10 +33,10 @@ body {
     margin-bottom: 1em;
 }
 
-.new-todo-div {
+.visible-new-todo-div {
+    display: flex;
     width: 40%;
     margin: 0 auto;
-    display: flex;
     justify-content: space-between;
     margin-top: 2em;
 }
@@ -45,7 +45,7 @@ body {
     width: 40%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .buttons button {
@@ -73,6 +73,10 @@ body {
 
 .new-input-field {
     width: 80%;
+}
+
+.invisible-new-todo-div {
+    display: none;
 }
 
 .new-input-field input {
